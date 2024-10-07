@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search the country/title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Search the Country</h1>
+        <button class="toggle"><i class="bx bx-moon"></i>Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <i class="bx bx-search"></i>
+            <input type="search" placeholder="Search Country" class="search">
+        </div>
+
+        <div class="dropdownMenu">
+            <div class="dropdown">
+                <p>Filter by Region</p>
+                <i class="bx bx-chevron-down"></i>
+            </div>
+
+            <div class="drop-options">
+                <p class="regions">All</p>
+                <p class="regions">Africa</p>
+                <p class="regions">America</p>
+                <p class="regions">Asia</p>
+                <p class="regions">Europe</p>
+                <p class="regions">Oceania</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="countries">
+        
+    </div>
+
+    <div class="modal" id="countryModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-details"></div>
+        </div>
+    </div>
+
+
+    <script src="api.js"></script>
+</body>
+</html>
